@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
  <!--Device-specific repositories-->
   <project path="device/htc/pyramid"
-	   name="ivanich/android_device_htc_pyramid" remote="github" revision="cm-12.1" />
-  <project path="kernel/htc/pyramid"
-	   name="milksob/android_kernel_htc_pyramid" remote="github" revision="hybris-12.1" />
+	   name="ivanich/android_device_htc_pyramid"
+	   remote="github" revision="cm-12.1" />
+  <project path="kernel/htc/pyramid" name="milksob/android_kernel_htc_pyramid"
+	   remote="github" revision="hybris-12.1" />
 
   <project path="hybris/droid-configs"
-	   name="milksob/droid-config-pyramid" revision="master" />
-  <project path="rpm/"
-	   name="milksob/droid-hal-pyramid" revision="hybris-12.1" />
+	   name="milksob/droid-config-pyramid"
+	   remote="github" revision="master" />
+  <project path="rpm/" name="milksob/droid-hal-pyramid"
+	   remote="github" revision="hybris-12.1" />
   <project path="hybris/droid-hal-version-pyramid"
-	   name="milksob/droid-hal-version-pyramid" revision="master" />
+	   name="milksob/droid-hal-version-pyramid"
+	   remote="github" revision="master" />
 
-  <remove-project path="hybris/hybris-boot" name="mer-hybris/hybris-boot" revision="master"/>
-  <project path="hybris/hybris-boot" name="milksob/hybris-boot" revision="master"/>
+  <remove-project name="mer-hybris/hybris-boot" />
+  <project path="hybris/hybris-boot" name="milksob/hybris-boot" remote="github" revision="master"/>
 
 <!-- Temporary clones -->
 
