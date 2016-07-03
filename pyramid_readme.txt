@@ -1,5 +1,5 @@
 1.follow SailfishOS hadk-1.1.2: setup sdk, etc., stop on page 15, when 'repo init'm read it but don't run commands
-2.repo init -u git://github.com/mer-hybris/android.git -b hybris-12.0
+2.repo init -u git://github.com/mer-hybris/android.git -b hybris-12.1
 3.use the pyramid.xml inplace $ANDROID_ROOT/.repo/local_manifests/$DEVICE.xml:
 4.repo sync --fetch-submodules
 if experience any problems, refere to hadk 5.5 Common Pitfalls
