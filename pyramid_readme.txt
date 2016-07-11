@@ -1,6 +1,7 @@
 1.follow SailfishOS hadk-1.1.2: setup sdk, etc., stop on page 15, when 'repo init'm read it but don't run commands
 2.repo init -u git://github.com/mer-hybris/android.git -b hybris-12.1
 3.use the pyramid.xml inplace $ANDROID_ROOT/.repo/local_manifests/$DEVICE.xml:
+(don't copy other xml's into your local_manifests)
 4.repo sync --fetch-submodules
 if experience any problems, refere to hadk 5.5 Common Pitfalls
 
@@ -25,3 +26,7 @@ HA_REPO1="repo --name=common  \
 --baseurl=$MOBS_URI/nemo:/devel:/hw:/common/sailfish_latest_@ARCH@/"
 sed -i -e "/^$HA_REPO.*$/a$HA_REPO1" tmp/Jolla-@RELEASE@-$DEVICE-@ARCH@.ks 
 then mic create, as in hadk, and build.
+
+You'll need Recovery and Android image, I got images from here:
+http://forum.xda-developers.com/htc-sensation/development/rom-cyanogenmod11-ivanich-t2911152
+I used cm-12.1-20160615-UNOFFICIAL-pyramid.zip, TWRP-3.0.M4-0-pyramid.img
